@@ -19,9 +19,21 @@ To write a Python program that takes a list of scores from participants and find
 ---
 
 ## 💻 PROGRAM:
-
-ADD CODE HERE
+```
+n = int(input("Enter the number of participants: "))
+scores = list(map(int, input("Enter the scores separated by space: ").split()))
+unique_scores = sorted(set(scores))
+if len(unique_scores) < 2:
+    print("Runner-up score not available.")
+else:
+    print("Runner-up score:", unique_scores[-2])
+```
 
 ## OUTPUT
-
+```
+Enter the number of participants: 5
+Enter the scores separated by space: 2 3 6 6 5
+Runner-up score: 5
+```
 ## RESULT
+Hence Found the Runner up score
