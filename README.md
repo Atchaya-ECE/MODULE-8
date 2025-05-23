@@ -1,34 +1,34 @@
 # # 🔢 Hackerrank:# 🏆 Student Topper Finder
 
-This Python program helps determine the *top-performing student* based on the total marks across five subjects. It uses a dictionary to store each student’s marks and identifies the topper using simple calculations and built-in functions.
+This Python program helps determine the **top-performing student** based on the total marks across five subjects. It uses a dictionary to store each student’s marks and identifies the topper using simple calculations and built-in functions.
 
 ---
 
 ## 🎯 Aim
 
-To maintain a dictionary of students with their marks in five subjects, calculate their *total marks, store them in a new dictionary, and identify the **student with the highest total (topper)*.
+To maintain a dictionary of students with their marks in five subjects, calculate their **total marks**, store them in a new dictionary, and identify the **student with the highest total (topper)**.
 
 ---
 
 ## 🧠 Algorithm
 
-1. *Start* the program.
-2. Create a dictionary student_marks:
+1. **Start** the program.
+2. Create a dictionary `student_marks`:
    - Keys → Student names.
    - Values → List of marks in five subjects.
-3. Initialize an empty dictionary total_marks.
-4. Loop through student_marks:
-   - Calculate the total marks using sum().
-   - Store the result in total_marks.
-5. Use max() on total_marks to find the student with the highest total.
+3. Initialize an empty dictionary `total_marks`.
+4. Loop through `student_marks`:
+   - Calculate the total marks using `sum()`.
+   - Store the result in `total_marks`.
+5. Use `max()` on `total_marks` to find the student with the highest total.
 6. Print:
-   - The total_marks dictionary.
-   - The *topper's name and score*.
+   - The `total_marks` dictionary.
+   - The **topper's name and score**.
 
 ---
 
 ## 💻 PROGRAM:
-
+```
 student_marks = {
     "Alice": [88, 76, 92, 85, 79],
     "Bob": [90, 91, 85, 88, 92],
@@ -45,9 +45,9 @@ for student, total in total_marks.items():
     print(f"{student}: {total}")
 
 print(f"\nTopper: {topper} with {top_score} marks.")
-
+```
 ## OUTPUT
-
+```
 Total Marks of Students:
 Alice: 420
 Bob: 446
@@ -55,7 +55,7 @@ Charlie: 362
 Diana: 464
 
 Topper: Diana with 464 marks.
-
+```
 ## RESULT
 Hence Calculated total marks for students and find the topper.
 
@@ -162,25 +162,25 @@ Thus the program has been successfully executed
 # 🏆 Hackerrank:Runner-Up Score Finder in Python
 
 ## 🎯 AIM:
-To write a Python program that takes a list of scores from participants and finds the *runner-up score* (i.e., the second-highest score), eliminating any duplicates.
+To write a Python program that takes a list of scores from participants and finds the **runner-up score** (i.e., the second-highest score), eliminating any duplicates.
 
 ---
 
 ## 🧠 ALGORITHM:
 
-1. *Start*
-2. Create a variable n and get its value from the user (number of participants)
-3. Read the list of n scores from the user using input().split() and convert them to integers
+1. **Start**
+2. Create a variable `n` and get its value from the user (number of participants)
+3. Read the list of `n` scores from the user using `input().split()` and convert them to integers
 4. Store the scores in a list
-5. Use set() to remove any duplicate scores
+5. Use `set()` to remove any duplicate scores
 6. Convert the set back to a list and sort it in ascending order
 7. Print the second-last element of the sorted list (i.e., the runner-up score)
-8. *Stop*
+8. **Stop**
 
 ---
 
 ## 💻 PROGRAM:
-
+```
 n = int(input("Enter the number of participants: "))
 scores = list(map(int, input("Enter the scores separated by space: ").split()))
 unique_scores = sorted(set(scores))
@@ -188,14 +188,14 @@ if len(unique_scores) < 2:
     print("Runner-up score not available.")
 else:
     print("Runner-up score:", unique_scores[-2])
-
+```
 
 ## OUTPUT
-
+```
 Enter the number of participants: 5
 Enter the scores separated by space: 2 3 6 6 5
 Runner-up score: 5
-
+```
 ## RESULT
 Hence Found the Runner up score
 
