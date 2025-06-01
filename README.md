@@ -154,7 +154,8 @@ for i in l4:
 
 
 ## Output
-![image](https://github.com/user-attachments/assets/9449f4da-1beb-4561-a55b-e6abb641834a)
+![image](https://github.com/user-attachments/assets/ff23c416-c836-41ef-af97-4fa30ce8e635)
+
 
 ## Result
 Thus the program has been successfully executed
@@ -226,18 +227,19 @@ To write a Python program that checks if a given string ends with a number using
 ## 💻  Program
 
 import re
-
-s = input()
-p = '[a-zA-Z0-9]*[0-9]+'
-x = re.match(p, s)
-
-if x:
-    print("True")
-else:
-    print("False")
+n=int(input())
+for i in range(n):
+    s=input()
+    try:
+        p=re.compile(s)
+        if p:
+            print('True')
+    except re.error:
+        print('False')
 
 ## Output
-![image](https://github.com/user-attachments/assets/7ddc3249-b794-4293-8464-501b03bb0a3c)
+![image](https://github.com/user-attachments/assets/e063e1eb-b9ed-4b83-a232-38153512d41b)
+
 
 ## Result
 Thus the program has been successfully executed
